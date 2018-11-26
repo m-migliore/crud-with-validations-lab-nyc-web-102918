@@ -5,9 +5,4 @@ class Song < ActiveRecord::Base
   def released?
     self.released
   end
-
-  def valid_release_year?
-    self.released? && self.valid_year?
-  end
-
 end
